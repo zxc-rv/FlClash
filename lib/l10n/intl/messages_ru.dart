@@ -481,7 +481,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Другие участники",
     ),
     "outboundMode": MessageLookupByLibrary.simpleMessage(
-      "Режим исходящего трафика",
+      "Режим проксирования",
     ),
     "override": MessageLookupByLibrary.simpleMessage("Переопределить"),
     "overrideDesc": MessageLookupByLibrary.simpleMessage(
@@ -634,7 +634,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Использовать конфигурацию",
     ),
     "ru": MessageLookupByLibrary.simpleMessage("Русский"),
-    "rule": MessageLookupByLibrary.simpleMessage("Правило"),
+    "rule": MessageLookupByLibrary.simpleMessage("По правилам"),
     "ruleName": MessageLookupByLibrary.simpleMessage("Название правила"),
     "ruleProviders": MessageLookupByLibrary.simpleMessage("Провайдеры правил"),
     "ruleTarget": MessageLookupByLibrary.simpleMessage("Цель правила"),
