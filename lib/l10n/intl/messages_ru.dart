@@ -228,7 +228,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "developerModeEnableTip": MessageLookupByLibrary.simpleMessage(
       "Режим разработчика активирован.",
     ),
-    "direct": MessageLookupByLibrary.simpleMessage("Прямой"),
+    "direct": MessageLookupByLibrary.simpleMessage("Напрямую"),
     "disclaimer": MessageLookupByLibrary.simpleMessage(
       "Отказ от ответственности",
     ),
@@ -323,7 +323,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "getOriginRules": MessageLookupByLibrary.simpleMessage(
       "Получить оригинальные правила",
     ),
-    "global": MessageLookupByLibrary.simpleMessage("Глобальный"),
+    "global": MessageLookupByLibrary.simpleMessage("Глобально"),
     "go": MessageLookupByLibrary.simpleMessage("Перейти"),
     "goDownload": MessageLookupByLibrary.simpleMessage("Перейти к загрузке"),
     "hasCacheChange": MessageLookupByLibrary.simpleMessage(
@@ -437,7 +437,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Изменение настроек, связанных с сетью",
     ),
     "networkDetection": MessageLookupByLibrary.simpleMessage(
-      "Обнаружение сети",
+      "Внешний IP",
     ),
     "networkSpeed": MessageLookupByLibrary.simpleMessage("Скорость сети"),
     "neutralScheme": MessageLookupByLibrary.simpleMessage("Нейтральные"),
