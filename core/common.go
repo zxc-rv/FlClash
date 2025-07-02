@@ -160,7 +160,7 @@ func patchSelectGroup(mapping map[string]string) {
 func defaultSetupParams() *SetupParams {
 	return &SetupParams{
 		Config:      config.DefaultRawConfig(),
-		TestURL:     "https://www.gstatic.com/generate_204",
+		TestURL:     "https://www.youtube.com/generate_204",
 		SelectedMap: map[string]string{},
 	}
 }
