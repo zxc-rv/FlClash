@@ -170,16 +170,26 @@ jobs:
 
       - name: Generate release.md
         run: |
+          set -e
+          git fetch --all --tags
           CURRENT_TAG=${{ github.ref_name }}
-          LATEST_RELEASE_TAG=$(curl --silent "https://api.github.com/repos/${{ github.repository }}/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")' || echo "")
-
-          if [ -n "$LATEST_RELEASE_TAG" ] && [ "$LATEST_RELEASE_TAG" != "$CURRENT_TAG" ]; then
-            LOG_RANGE="$LATEST_RELEASE_TAG..$CURRENT_TAG"
+          echo "Current Tag: $CURRENT_TAG"
+          SORTED_TAGS=$(git tag --list 'v*' | sort -V)
+          LINE_NUMBER=$(echo "$SORTED_TAGS" | grep -nxF "$CURRENT_TAG" | cut -d: -f1)
+          PREVIOUS_TAG=""
+          if [ "$LINE_NUMBER" -gt 1 ]; then
+            PREV_LINE_NUMBER=$((LINE_NUMBER - 1))
+            PREVIOUS_TAG=$(echo "$SORTED_TAGS" | sed -n "${PREV_LINE_NUMBER}p")
+          fi
+          echo "Previous Tag Found: $PREVIOUS_TAG"
+          if [ -n "$PREVIOUS_TAG" ]; then
+            LOG_RANGE="$PREVIOUS_TAG..$CURRENT_TAG"
           else
             LOG_RANGE="$CURRENT_TAG"
           fi
-
-          git log --pretty=format:"- %B" "$LOG_RANGE" | awk 'NF {print} !NF {print ""}' > release.md
+          echo "Using git log range: $LOG_RANGE"
+          git log --pretty=format:"- %s" --no-merges "$LOG_RANGE" > release.md
+          echo "release.md generated successfully."
 
       - name: Patch release.md
         run: |
