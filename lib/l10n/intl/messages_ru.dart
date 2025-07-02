@@ -475,7 +475,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "onlyStatisticsProxyDesc": MessageLookupByLibrary.simpleMessage(
       "При включении будет учитываться только трафик прокси",
     ),
-    "options": MessageLookupByLibrary.simpleMessage("Опции"),
+    "options": MessageLookupByLibrary.simpleMessage("Включить"),
     "other": MessageLookupByLibrary.simpleMessage("Другое"),
     "otherContributors": MessageLookupByLibrary.simpleMessage(
       "Другие участники",
