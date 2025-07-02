@@ -1,3 +1,13 @@
+## v0.8.86_unc8
+
+- Update clash_config.freezed.dart
+- Update clash_config.dart
+- Update build.yaml
+- Update messages_ru.dart
+- Update intl_ru.arb
+- Update messages_ru.dart
+- Update changelog
+
 ## v0.8.86_unc7
 
 - Update build.yaml
