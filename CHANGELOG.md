@@ -1,3 +1,12 @@
+## v0.8.86_unc7
+
+- Update build.yaml
+- Update messages_ru.dart
+- Update build.yaml
+- Update release_template.md
+- Update build.yaml
+- Update changelog
+
 ## v0.8.86_unc4
 
 - android_comeback
