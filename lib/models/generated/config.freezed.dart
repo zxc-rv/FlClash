@@ -1712,7 +1712,7 @@ class _$ProxiesStyleImpl implements _ProxiesStyle {
       this.sortType = ProxiesSortType.none,
       this.layout = ProxiesLayout.standard,
       this.iconStyle = ProxiesIconStyle.icon,
-      this.cardType = ProxyCardType.expand,
+      this.cardType = ProxyCardType.shrink,
       final Map<String, String> iconMap = const {}})
       : _iconMap = iconMap;
 
