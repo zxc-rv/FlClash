@@ -3927,8 +3927,8 @@ class _$ClashConfigImpl implements _ClashConfig {
       this.findProcessMode = FindProcessMode.always,
       @JsonKey(name: "keep-alive-interval")
       this.keepAliveInterval = defaultKeepAliveInterval,
-      @JsonKey(name: "unified-delay") this.unifiedDelay = true,
-      @JsonKey(name: "tcp-concurrent") this.tcpConcurrent = true,
+      @JsonKey(name: "unified-delay") this.unifiedDelay = false,
+      @JsonKey(name: "tcp-concurrent") this.tcpConcurrent = false,
       @JsonKey(fromJson: Tun.safeFormJson) this.tun = defaultTun,
       @JsonKey(fromJson: Dns.safeDnsFromJson) this.dns = defaultDns,
       @JsonKey(name: "geox-url", fromJson: GeoXUrl.safeFormJson)
